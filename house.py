@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 st.header('House Prices Prediction Created By Cole')
 
-dg = pd.read_csv(r"C:\Users\HP\Documents\NEW COLE\Bengaluru_House_Data.csv")
+dg = pd.read_csv("Bengaluru_House_Data.csv")
 st.dataframe(dg)
 
 df = dg[['area_type', 'location', 'availability',  'bath', 'balcony', 'price']].dropna()
